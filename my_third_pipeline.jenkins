@@ -50,6 +50,11 @@ pipeline {
             steps {
                 echo "Move working version from staging to production"
             }
+
+        stage('Complete') {
+            steps {
+                echo "Completed."
+            }
         }
     }
 }
