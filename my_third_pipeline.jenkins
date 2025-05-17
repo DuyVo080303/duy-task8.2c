@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DIRECTORY_PATH = 'https://github.com/DuyVo080303/duy-task8.2c.git'
+        DIRECTORY_PATH = 'D:\\DESKTOP\\Deakin\\T1_2025\\SIT753\\Week 6'
         TESTING_ENVIRONMENT = 'staging-server'
         PRODUCTION_ENVIRONMENT = 'Duy Production'
     }
@@ -49,6 +49,12 @@ pipeline {
         stage('Deploy to Production') {
             steps {
                 echo "Move working version from staging to production"
+            }
+        }
+
+        stage('Complete') {
+            steps {
+                echo "Completed"
             }
         }
     }
